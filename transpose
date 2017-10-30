@@ -1,0 +1,23 @@
+#include<stdio.h>
+#define row 3
+#define col 4
+main()
+{
+	int m1[row][col],m2[col][row],i,j;
+	printf("m1:%d*%d",row,col);
+	for(i=0;i<row;i++)
+	   for(j=0;j<col;j++)
+	      scanf("%d",&m1[i][j]);
+	for(i=0;i<col;i++)
+	   for(j=0;j<row;j++)
+	       m2[i][j]=m1[j][i];
+	printf("transpose of matrix");
+	for(i=0;i<col;i++)
+	{
+	   for(j=0;j<row;j++)
+	   printf("%5d",m2[i][j]);
+	   printf("\n");       
+	      
+	     
+}
+}
